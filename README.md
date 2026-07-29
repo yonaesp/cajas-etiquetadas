@@ -29,7 +29,7 @@ Una sola barra que entiende lo que escribes y decide sola si buscas o guardas:
 | `prismaticos` | lo encuentra aunque lo tengas escrito con tilde |
 | `destornilladr` | lo encuentra con la errata |
 | `C3` | abre esa caja |
-| `guardar en C3 tornillos y cinta` | lo mete en C3 |
+| `guardar en C3 tornillos y cinta` | guarda tornillos y cinta en C3 |
 | `dónde está el taladro` | también vale preguntar así |
 
 También puedes dictarlo con el micrófono del teclado.
