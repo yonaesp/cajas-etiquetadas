@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cajas Etiquetadas · Apunta qué hay en cada caja</title>
+<meta name="description" content="Inventario para tu trastero, garaje y mudanzas. Apunta qué hay en cada caja y encuéntralo sin abrirlas. Funciona sin internet.">
+<style>
+  :root { color-scheme: light dark; --indigo:#4F46E5; --tinta:#16161d; --suave:#5a5a6b; --fondo:#f1f2f7; --tarjeta:#fff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta:#e2e2e9; --suave:#9c9eab; --fondo:#0e0f13; --tarjeta:#181b22; --indigo:#9ba4f0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; background:var(--fondo); color:var(--tinta);
+         font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  .contenedor { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+
+  header { background: linear-gradient(115deg,#4F46E5,#6D5FF0); color:#fff;
+           padding: 3.5rem 0 3rem; text-align:center; }
+  header h1 { margin:0 0 .5rem; font-size:2.1rem; letter-spacing:-.5px; }
+  header p  { margin:0 auto; max-width:30rem; font-size:1.05rem; opacity:.92; }
+  .caja { width:96px; margin:0 auto 1.25rem; display:block; }
+
+  h2 { font-size:1.15rem; margin:2.5rem 0 .75rem; }
+  .tarjeta { background:var(--tarjeta); border-radius:16px; padding:1.25rem 1.4rem;
+             margin:.75rem 0; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table { width:100%; border-collapse:collapse; }
+  td { padding:.45rem 0; vertical-align:top; border-bottom:1px solid rgba(128,128,128,.15); }
+  td:first-child { white-space:nowrap; padding-right:1rem; font-family:ui-monospace,monospace;
+                   color:var(--indigo); font-weight:600; }
+  tr:last-child td { border-bottom:0; }
+  ul { padding-left:1.15rem; } li { margin:.35rem 0; }
+  a { color:var(--indigo); }
+  .aviso { border-left:4px solid var(--indigo); }
+  footer { margin:3.5rem 0 2.5rem; text-align:center; color:var(--suave); font-size:.9rem; }
+  footer a { margin:0 .5rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="caja" viewBox="0 0 108 108" aria-hidden="true">
+    <path fill="#EEF1F8" d="M54,27 L82,43 L54,59 L26,43 Z"/>
+    <path fill="#98A3C2" d="M26,43 L54,59 L54,86 L26,70 Z"/>
+    <path fill="#C3CADF" d="M82,43 L54,59 L54,86 L82,70 Z"/>
+    <path fill="#FFFFFF" d="M58.2,64.2 L77.8,53 L77.8,61.1 L58.2,72.3 Z"/>
+    <path stroke="#4F46E5" stroke-width="2.6" d="M61.5,66.6 L74.5,59.2"/>
+  </svg>
+  <h1>Cajas Etiquetadas</h1>
+  <p>Apunta qué hay en cada caja y encuéntralo sin abrirlas.</p>
+</header>
+
+<div class="contenedor">
+
+  <h2>Qué resuelve</h2>
+  <p>Tienes cajas apiladas y no te acuerdas de en cuál está el taladro. Abres tres,
+  no aparece, y las vuelves a apilar.</p>
+  <p>Pon un código a cada caja —<strong>A1</strong>, <strong>C3</strong>, el que
+  quieras—, apunta lo que metes dentro, y luego búscalo. Te dice la caja exacta.</p>
+
+  <h2>Cómo se usa</h2>
+  <div class="tarjeta">
+    <table>
+      <tr><td>taladro</td><td>te dice en qué caja está</td></tr>
+      <tr><td>prismaticos</td><td>lo encuentra aunque lo tengas escrito con tilde</td></tr>
+      <tr><td>destornilladr</td><td>lo encuentra con la errata</td></tr>
+      <tr><td>C3</td><td>abre esa caja</td></tr>
+      <tr><td>guardar en C3 tornillos y cinta</td><td>lo mete en C3</td></tr>
+    </table>
+  </div>
+  <p>Una sola barra que entiende lo que escribes y decide sola si buscas o guardas.
+  También puedes dictarlo con el micrófono del teclado.</p>
+
+  <h2>Lo que hace</h2>
+  <ul>
+    <li><strong>Buscador</strong> que perdona erratas y no necesita tildes.</li>
+    <li><strong>Mapa</strong> de tus zonas, con un color por zona y el estado de cada
+    caja: libre, con hueco o llena.</li>
+    <li><strong>Etiquetas QR imprimibles</strong>, del tamaño en centímetros que
+    elijas, con vista previa e impresión directa. También en versión de solo código.</li>
+    <li><strong>Escáner</strong> de esas etiquetas. Y como el QR lleva un enlace,
+    funciona hasta con la cámara normal del teléfono.</li>
+    <li><strong>Sacar cosas temporalmente</strong> sin borrarlas, con la cuenta de
+    cuánto llevan fuera.</li>
+    <li><strong>Excel</strong> para leer e imprimir, y <strong>copia de seguridad</strong>
+    para cambiar de móvil.</li>
+    <li><strong>Histórico</strong> de los últimos cambios, para volver atrás si
+    borras algo sin querer.</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <div class="tarjeta aviso">
+    <p style="margin:0"><strong>La aplicación no declara el permiso de internet.</strong>
+    No es una promesa comercial: es que técnicamente no puede conectarse a ningún
+    sitio. Sin cuentas, sin publicidad, sin analítica y sin servidores.</p>
+  </div>
+  <p>El único permiso que pide es la <strong>cámara</strong>, y solo mientras tienes
+  abierto el escáner de códigos QR. Todo lo que escribes se queda en el
+  almacenamiento privado de la aplicación.</p>
+  <p><a href="legal/privacidad.html">Leer la política de privacidad completa</a></p>
+
+  <h2>Requisitos</h2>
+  <p>Android 7.0 o posterior. Ocupa unos 2 MB.</p>
+
+</div>
+
+<footer>
+  <a href="legal/privacidad.html">Privacidad</a>·<a href="legal/terminos.md">Términos</a>·<a href="legal/licencias-terceros.md">Licencias</a>
+  <p>Hecho en España · Sin anuncios, sin compras y sin recoger datos</p>
+</footer>
+
+</body>
+</html>
