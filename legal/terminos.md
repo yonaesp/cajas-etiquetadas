@@ -1,52 +1,84 @@
-# Términos de uso
+# Condiciones de uso de Cajas Etiquetadas
 
-**Cajas Etiquetadas** para Android · Actualizado el 29 de julio de 2026
+**Versión 1.0 · 30 de julio de 2026**
 
 ## Qué es esto
 
-Cajas Etiquetadas es una aplicación para llevar el inventario de tus cajas: qué hay
-dentro de cada una, dónde están y cuánto sitio queda. Funciona íntegramente en tu
-teléfono.
+Cajas Etiquetadas es una aplicación para Android que sirve para llevar la cuenta de
+lo que guardas en cajas etiquetadas: qué hay dentro de cada una y cuánto sitio queda.
+Funciona íntegramente en el teléfono. La desarrolla un particular en España, sin
+ninguna empresa detrás.
 
-Al instalarla y usarla, aceptas lo que se explica aquí.
+Estas condiciones son el acuerdo entre quien la usa y quien la hace. Al instalarla,
+las aceptas.
 
-## Precio
+## Lo que cuesta y lo que incluye
 
-La aplicación es gratuita. No tiene compras dentro, ni suscripciones, ni funciones
-de pago, ni publicidad.
+La aplicación es **gratuita**. No tiene publicidad, ni compras dentro, ni
+suscripciones, ni versiones de pago, ni funciones bloqueadas a la espera de que pagues.
+
+Tampoco hay cuentas ni registro: se instala y se usa.
+
+## Uso permitido
+
+Puedes usarla para lo que quieras, en tu casa o en tu negocio, en tantos dispositivos
+como tengas y sin límite de cajas ni de objetos.
+
+Lo que no puedes hacer es distribuirla modificada como si fuera la original,
+publicarla en otras tiendas haciéndola pasar por tuya, ni reutilizar partes de ella
+sin respetar las licencias que se indican más abajo. Tampoco usarla para nada ilegal.
 
 ## Tus datos son tuyos
 
-Todo lo que escribes se guarda solo en tu teléfono. No hay servidor, ni cuenta, ni
-copia en la nube gestionada por nosotros. Consulta la
-[política de privacidad](privacidad.md) para el detalle.
+Lo que apuntas es tuyo. La aplicación no lo envía a ningún sitio: no declara el
+permiso de internet, así que técnicamente no puede. El detalle está en la
+[política de privacidad](privacidad.md).
 
-**La responsabilidad de conservar tus datos es tuya.** La aplicación incluye
-funciones de exportación y copia de seguridad precisamente para eso: úsalas de vez
-en cuando. Si desinstalas la aplicación, cambias de teléfono o lo pierdes, la
-información se pierde con él y no hay forma de recuperarla desde aquí.
+**Conservarlo es responsabilidad tuya.** Si pierdes el teléfono, lo restableces de
+fábrica o desinstalas la aplicación, los datos se van con él. Para eso está la
+exportación: usa Ajustes → Exportar de vez en cuando y guarda la copia en un sitio
+seguro.
 
-## Garantías
+## Garantía
 
-La aplicación se ofrece **tal cual**, sin garantía de que esté libre de errores ni
-de que sea apta para un fin concreto. En la medida que permita la ley aplicable, el
-desarrollador no responde de pérdidas de datos ni de daños derivados del uso o de la
-imposibilidad de uso.
+La aplicación se ofrece **tal cual**, sin garantía de ningún tipo. Se ha puesto
+cuidado en que funcione y en que no pierda nada —tiene copias de seguridad, historial
+de cambios y confirmación deslizando antes de borrar—, pero ningún programa está
+libre de fallos.
 
-Esto no excluye ni limita los derechos que te reconozca la normativa de consumo de
-tu país, que prevalecen sobre este texto.
+En la medida en que la ley lo permita, no se asume responsabilidad por pérdida de
+datos, por daños derivados del uso de la aplicación, ni por decisiones que tomes
+apoyándote en lo que la aplicación te muestre. En particular, la aplicación te enseña
+lo que tú apuntaste: si lo apuntaste mal, o moviste algo de caja sin actualizarlo, el
+error no es del programa.
 
-## Uso razonable
+Nada de lo anterior limita los derechos que la legislación española y europea de
+consumo te reconozca y que no puedan excluirse por contrato.
 
-No uses la aplicación para nada ilegal, ni intentes descompilarla o modificarla para
-distribuirla como propia. El software de terceros que incorpora tiene sus propias
-licencias, listadas en [licencias de terceros](licencias-terceros.md).
+## Actualizaciones y disponibilidad
 
-## Cambios
+Se publicarán mejoras cuando haya algo que mejorar, pero no hay ningún compromiso de
+frecuencia, ni de mantener la aplicación indefinidamente, ni de conservar una función
+concreta.
 
-Si estos términos cambian, se actualizará esta página y la fecha de arriba. Las
-versiones nuevas de la aplicación pueden añadir, cambiar o retirar funciones.
+Si algún día se dejara de mantener, la que tengas instalada **seguirá funcionando**:
+no necesita servidores para nada. Y tu inventario se puede exportar en cualquier
+momento a Excel o a una copia, así que no se queda atrapado dentro.
 
-## Contacto
+## Componentes de terceros
 
-<jonatanpradasn@gmail.com>
+La aplicación incluye software libre de terceros, todo con licencia Apache 2.0. Está
+listado en [licencias-terceros.md](licencias-terceros.md) con su titular de derechos,
+como exige el apartado 4 de esa licencia.
+
+## Cambios en estas condiciones
+
+Si cambian, se publicará una versión nueva con su fecha en esta misma dirección, y el
+número de versión de arriba subirá. Mientras siga poniendo 1.0, no ha cambiado nada.
+
+## Ley aplicable y contacto
+
+Se aplica la legislación española.
+
+Para dudas, fallos o sugerencias:
+<https://github.com/yonaesp/cajas-etiquetadas/issues>

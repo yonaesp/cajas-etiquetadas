@@ -4,103 +4,85 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de privacidad · Cajas Etiquetadas</title>
+<meta name="description" content="Cajas Etiquetadas no recoge ningún dato: no declara el permiso de internet, así que no puede enviar nada.">
 <style>
-  :root { color-scheme: light dark; }
-  body {
-    max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 4rem;
-    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: #16161d; background: #f1f2f7;
-  }
-  h1 { font-size: 1.6rem; line-height: 1.25; margin-bottom: .25rem; }
-  h2 { font-size: 1.1rem; margin-top: 2.25rem; }
-  .fecha { color: #5a5a6b; font-size: .9rem; margin-top: 0; }
-  .destacado {
-    background: #fff; border-left: 4px solid #4f46e5;
-    border-radius: 12px; padding: 1rem 1.25rem; margin: 1.5rem 0;
-  }
-  ul { padding-left: 1.2rem; }
-  li { margin: .4rem 0; }
-  code { background: #e7e8ef; padding: .1rem .35rem; border-radius: 5px; font-size: .9em; }
-  a { color: #4f46e5; }
-  footer { margin-top: 3rem; font-size: .9rem; color: #5a5a6b; }
+  :root { color-scheme: light dark; --tinta:#16161d; --suave:#5a5a6b;
+          --fondo:#f1f2f7; --tarjeta:#fff; --indigo:#4F46E5; }
   @media (prefers-color-scheme: dark) {
-    body { color: #e2e2e9; background: #0e0f13; }
-    .fecha, footer { color: #9c9eab; }
-    .destacado { background: #181b22; border-left-color: #9ba4f0; }
-    code { background: #262931; }
-    a { color: #9ba4f0; }
-  }
+    :root { --tinta:#e4e5ec; --suave:#a6a9b7; --fondo:#0e0f13;
+            --tarjeta:#1d212a; --indigo:#a3abf2; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--tinta);
+         font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 { font-size:1.7rem; letter-spacing:-.4px; margin:0 0 .35rem; }
+  .version { color:var(--suave); font-size:.92rem; margin:0 0 2rem; }
+  section { background:var(--tarjeta); border-radius:16px; padding:1.1rem 1.4rem;
+            margin:0 0 .9rem; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  h2 { font-size:1.05rem; margin:.2rem 0 .6rem; }
+  p { margin:0 0 .7rem; } p:last-child { margin-bottom:.2rem; }
+  a { color:var(--indigo); }
+  footer { margin-top:2.5rem; color:var(--suave); font-size:.9rem; }
 </style>
 </head>
 <body>
-
-<h1>Política de privacidad</h1>
-<p class="fecha">Aplicación <strong>Cajas Etiquetadas</strong> para Android · Actualizada el 29 de julio de 2026</p>
-
-<div class="destacado">
-  <p><strong>Resumen: esta aplicación no recoge ningún dato.</strong> No tiene permiso
-  de acceso a internet, así que técnicamente no puede enviar nada a ningún sitio.
-  Todo lo que escribes se queda en tu teléfono.</p>
-</div>
-
-<h2>Qué datos se recogen</h2>
-<p>Ninguno. No hay cuentas, ni registro, ni analítica, ni publicidad, ni
-identificadores de dispositivo, ni servicios de terceros de ningún tipo.</p>
-
-<h2>Qué datos guarda la aplicación, y dónde</h2>
-<p>Lo que tú escribes: los códigos de tus cajas, lo que hay dentro de cada una, tus
-notas y las fechas en que guardaste cada cosa. Todo ello se almacena
-<strong>únicamente en el almacenamiento interno de tu teléfono</strong>, en una base
-de datos privada de la aplicación a la que ninguna otra aplicación puede acceder.</p>
-
+<main>
+<h1>Política de privacidad de Cajas Etiquetadas</h1>
+<p class="version">Versión 1.0 · 30 de julio de 2026</p>
+<section>
+<h2>En resumen</h2>
+<p>Cajas Etiquetadas no recoge ningún dato, no los guarda en ningún servidor y no los comparte con nadie. No hay cuentas, ni publicidad, ni analítica, ni seguimiento de ningún tipo.</p>
+<p>Y no es una promesa comercial: la aplicación no declara el permiso de internet, así que Android no le permite abrir ninguna conexión de red. Puedes comprobarlo tú en su ficha de Google Play, en el apartado de permisos.</p>
+</section>
+<section>
+<h2>Qué datos maneja, y dónde están</h2>
+<p>Lo que escribes: los códigos de tus cajas, el nombre de las cosas que guardas, las notas y las fechas en que las metiste o las sacaste.</p>
+<p>Todo eso se guarda en el almacenamiento privado de la aplicación, dentro de tu teléfono. Ninguna otra aplicación puede leerlo, y nosotros tampoco.</p>
+</section>
+<section>
 <h2>Permisos</h2>
-<ul>
-  <li><strong>Cámara</strong> — es el único permiso que se solicita. Se usa
-  exclusivamente para leer los códigos QR de las etiquetas, y solo mientras tienes
-  abierta la pantalla del escáner. Las imágenes de la cámara se procesan en el
-  momento dentro del teléfono y <strong>no se guardan ni se transmiten</strong>.
-  La aplicación funciona con normalidad si decides no conceder este permiso.</li>
-  <li><strong>Internet</strong> — <em>no</em> se solicita. La aplicación no tiene
-  capacidad de conectarse a la red.</li>
-</ul>
-
-<h2>Cuándo sale información de tu teléfono</h2>
-<p>Solo en dos situaciones, y ambas dependen de ti:</p>
-<ul>
-  <li><strong>Cuando tú lo compartes.</strong> Si usas las funciones de exportar o
-  compartir (Excel, copia de seguridad o PDF de etiquetas), tú eliges la aplicación
-  de destino y qué se hace con el fichero. Esta aplicación no interviene en ese
-  envío ni recibe copia de nada.</li>
-  <li><strong>Copia de seguridad de Android.</strong> Si tienes activada la copia
-  automática del sistema en los ajustes de tu teléfono, Android puede incluir los
-  datos de esta aplicación en tu copia de seguridad. Esa copia va
-  <strong>a tu propia cuenta de Google</strong>, cifrada, y se rige por la política
-  de privacidad de Google. Ni el desarrollador ni esta aplicación tienen acceso a
-  ella. Puedes desactivarla en <code>Ajustes → Google → Copia de seguridad</code>.</li>
-</ul>
-
+<p>Cámara. Únicamente para leer los códigos QR de tus etiquetas, y solo mientras tienes abierto el escáner. Las imágenes se analizan en el momento: no se guardan, no se envían y no queda copia de ninguna.</p>
+<p>La aplicación no pide ningún otro permiso, y puedes usarla entera sin conceder el de la cámara. Solo perderías el escáner.</p>
+</section>
+<section>
+<h2>Cuando algo sale del teléfono, lo decides tú</h2>
+<p>La aplicación puede generar tres ficheros: una hoja de cálculo con tu inventario, una copia de seguridad y un PDF con las etiquetas para imprimir.</p>
+<p>Esos ficheros se guardan donde tú indiques, o se envían a la aplicación que tú elijas: el correo, la mensajería, la impresora. A partir de ese momento se rigen por las condiciones de esa otra aplicación, no por las nuestras.</p>
+</section>
+<section>
+<h2>La copia de seguridad de Android</h2>
+<p>Android puede incluir los datos de la aplicación en la copia de seguridad automática de tu cuenta de Google, igual que hace con las demás aplicaciones que tienes instaladas.</p>
+<p>Esa copia es tuya y va a tu cuenta: no tenemos acceso a ella ni podemos consultarla. Si prefieres que no se haga, se desactiva en los ajustes de Android, en Google y luego Copia de seguridad.</p>
+</section>
+<section>
+<h2>Borrar y llevarte tus datos</h2>
+<p>Para borrarlo todo: desinstala la aplicación, o bórrala desde los ajustes de Android. No queda nada en ningún otro sitio.</p>
+<p>Para llevártelos: exporta una copia de seguridad o una hoja de cálculo desde Ajustes. El fichero es tuyo y lo puedes abrir con otros programas.</p>
+</section>
+<section>
 <h2>Menores</h2>
-<p>La aplicación no está dirigida a menores de 13 años y no recoge datos de nadie,
-independientemente de su edad.</p>
-
-<h2>Cómo borrar tus datos</h2>
-<p>Desinstalar la aplicación elimina toda su información del teléfono. También
-puedes borrar datos concretos desde la propia aplicación, o vaciarlo todo desde
-<code>Ajustes → Aplicaciones → Cajas Etiquetadas → Almacenamiento → Borrar datos</code>.
-Como no existe ninguna copia en servidores, no hay nada más que solicitar.</p>
-
-<h2>Cambios en esta política</h2>
-<p>Si en el futuro la aplicación empezara a tratar datos de alguna forma distinta,
-esta página se actualizará antes de publicar esa versión, y se indicará la fecha del
-cambio arriba.</p>
-
-<h2>Contacto</h2>
-<p>Para cualquier duda sobre privacidad, escribe a
-<a href="mailto:jonatanpradasn@gmail.com">jonatanpradasn@gmail.com</a>.</p>
-
+<p>La aplicación no está dirigida a menores de edad. Tampoco recoge datos de nadie, con lo que no recoge datos de menores.</p>
+</section>
+<section>
+<h2>Si en el futuro cambia algo</h2>
+<p>Esta política describe lo que hace la versión que tienes instalada.</p>
+<p>Si alguna versión futura añadiera algo que salga del teléfono —por ejemplo, sincronizar el inventario entre tus propios dispositivos—, será opcional y vendrá desactivado. Se explicará con claridad antes de que puedas activarlo, y esta política se actualizará, con su fecha y su número de versión, antes de que la función esté disponible.</p>
+<p>Mientras no veas un número de versión más alto que el de arriba, nada de esto ha cambiado.</p>
+</section>
+<section>
+<h2>Responsable y contacto</h2>
+<p>La aplicación la desarrolla un particular en España, sin ninguna empresa detrás.</p>
+<p>Como no se recogen ni se tratan datos personales fuera de tu dispositivo, no hay ningún fichero nuestro sobre el que ejercer derechos de acceso, rectificación o supresión: tus datos son tuyos y están en tu teléfono.</p>
+<p>Para dudas, fallos o sugerencias: <a href="https://github.com/yonaesp/cajas-etiquetadas/issues">https://github.com/yonaesp/cajas-etiquetadas/issues</a></p>
+</section>
+<section>
+<h2>Historial de cambios</h2>
+<p>1.0 — 30 de julio de 2026. Primera versión.</p>
+</section>
 <footer>
-  Cajas Etiquetadas · Aplicación para Android · Desarrollada por Jonatan
+<p>Esta página es la versión oficial y pública: <a href="https://yonaesp.github.io/cajas-etiquetadas/legal/privacidad.html">https://yonaesp.github.io/cajas-etiquetadas/legal/privacidad.html</a></p>
+<p><a href="../">Volver a Cajas Etiquetadas</a></p>
 </footer>
-
+</main>
 </body>
 </html>
